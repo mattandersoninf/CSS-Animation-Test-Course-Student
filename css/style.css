@@ -1,5 +1,6 @@
 /* table */
 
+/* DO NOT CHANGE START */
 .board{
     background-color: #212529;
 }
@@ -20,8 +21,29 @@ td{
 }
 
 .animate-table-cell{
-    animation: cycleTropicColor 0.5s forwards linear;
+    animation: cycleColor 0.5s forwards linear;
     pointer-events: none;
+}
+
+/* DO NOT CHANGE END */
+
+/* TBD */
+
+@keyframes cycleColor{
+    0% { 
+        background-color: #212529;
+        border-radius: 1%;
+    }
+
+    50% { 
+        background-color: rgb(0, 255, 0);
+        border-radius: 50%;
+    }
+
+    100% { 
+        background-color: #212529;
+        border-radius: 1%;
+    }
 }
 
 @keyframes cyclePeachColor{
